@@ -1,5 +1,5 @@
 # Map-Reduce_Job
-> GOAL : Calculating the average personal incomes using a Map-Reduce job.
+> GOAL : Calculating the average personal incomes by District ID using a Map-Reduce job.
 
 
 **Tools :**
