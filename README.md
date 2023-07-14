@@ -41,7 +41,8 @@ import sys
 n = None
 for line in sys.stdin:
   for i,s in enumerate(line.split(',')) :
-    if i == 1 : n = s
+    if i == 1 :
+      n = s
     elif i == 2 :
       op = n + "\t{income}" .format(income = s)
       print(op)
