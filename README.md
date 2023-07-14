@@ -121,11 +121,11 @@ Next, we enter the **bash** command as follows: <br>
 
 hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 -input /user/cloudera/Assignment.txt \
--output /user/cloudera/as01 \
--mapper “python mapper2.py” \
--reducer “python reducer2.py” \
+-output /user/cloudera/Result \
+-mapper “python mapper.py” \
+-reducer “python reducer.py” \
 -combiner “python combiner.py” \
--file mapper2.py -file reducer2.py -file combiner.py
+-file mapper.py -file reducer.py -file combiner.py
 
 ```
 ***NOTE :*** These methods are executed on [Virtualbox](https://www.virtualbox.org/)
