@@ -174,4 +174,4 @@ words_1 = words.reduceByKey( avg ).mapValues( lambda x : x[0] / x[1] )
 <br>
 
 # 
-Go to Top : [:arrow_double_up: TOP](https://github.com/HikariJadeEmpire/Map-Reduce_Job)
+Go to Top : [:arrow_double_up: TOP](https://github.com/HikariJadeEmpire/Map-Reduce_Job#map-reduce_job)
