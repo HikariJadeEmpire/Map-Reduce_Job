@@ -133,7 +133,7 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 
 <h3> Hadoop RESULT </h3>
 
-XXX
+![Capture](https://github.com/HikariJadeEmpire/Map-Reduce_Job/assets/118663358/c0c3c5d7-d513-4726-ad09-1e482426061c)
 
 <br>
 
@@ -143,8 +143,6 @@ To commence a Map-Reduce job in PySpark, we need to define the required function
 <br>
 
 ```ruby
-
-from operator import add
 
 def map1( f ) :
   id, dis, inc = f.split( ',' )
@@ -171,7 +169,7 @@ words_1 = words.reduceByKey( avg ).mapValues( lambda x : x[0] / x[1] )
 
 <h3> Pyspark RESULT </h3>
 
-XXX
+![Capture1](https://github.com/HikariJadeEmpire/Map-Reduce_Job/assets/118663358/852b6218-838b-4d52-b8dd-b4afd488dbf3)
 
 <br>
 
