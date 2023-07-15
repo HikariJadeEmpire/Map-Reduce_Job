@@ -1,5 +1,5 @@
 # Map-Reduce_Job
-> GOAL : Calculating the average personal incomes by District ID using a Map-Reduce job.
+> **GOAL :** Calculating the average **personal incomes** by **District ID** using a Map-Reduce job.
 
 
 **Tools :**
@@ -10,26 +10,46 @@
 ***NOTE :*** These methods are executed on [Virtualbox](https://www.virtualbox.org/)
 
 #
-**Original file :** *Assignment.txt* ( without columns )
+**DATA :** *Assignment.txt*
 <br>
 
 | person id | district id | personal income |
 |-----------|-------------|-----------------|
-| 10021 | 2 | 120000 |
-| 10023 | 3 | 200000 |
-| 10024 | 2 | 320000 |
-| 10025 | 1 | 500000 |
-| 10026 | 1 | 480000 |
-| 10027 | 4 | 350000 |
-| 10028 | 3 | 120000 |
-| 10029 | 3 | 140000 |
+| 10021 | 2 | 120,000 |
+| 10023 | 3 | 200,000 |
+| 10024 | 2 | 320,000 |
+| 10025 | 1 | 500,000 |
+| 10026 | 1 | 480,000 |
+| 10027 | 4 | 350,000 |
+| 10028 | 3 | 120,000 |
+| 10029 | 3 | 140,000 |
+
+<br>
+
+
+**Preview :** *Assignment.txt*
+
+
+```ruby
+
+10021,2,120000
+10023,3,200000
+10024,2,320000
+10025,1,500000
+10026,1,480000
+10027,4,350000
+10028,3,120000
+10029,3,140000
+
+```
 
 <br>
 
 # Hadoop
-To initiate a Map-Reduce job in Hadoop, we need to create the following files: "mapper.py", "combiner.py", and "reducer.py" as outlined below :
+To initiate a Map-Reduce job in Hadoop, we need to create the following files: 
+```mapper.py```, ```combiner.py``` and ```reducer.py``` as outlined below :
 
-- ***"mapper.py"***
+- ***mapper.py***
 
 ```ruby
 
@@ -51,7 +71,7 @@ for line in sys.stdin:
 
 <br>
 
-- ***"combiner.py"***
+- ***combiner.py***
 
 ```ruby
 
@@ -84,7 +104,7 @@ print( "%s\t%s\t%s"%( cur_district, sum_income, district_count ) )
 
 <br>
 
-- ***"reducer.py"***
+- ***reducer.py***
 
 ```ruby
 
